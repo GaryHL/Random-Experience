@@ -1,0 +1,103 @@
+/* ==========================BODY---GENERAL=================================== */
+body, html {
+    height:100%;
+    font-family:montserrat,sans-serif;
+}
+body{
+    background-image: url("Recursos/Posibles\ backgrounds.png") ;
+    background-color:#1f2422;
+    background-size:1370px;
+    background-repeat:no-repeat;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+    flex-direction:column;
+}
+/* eltilo del login css */
+.logo{
+    margin-top:-100px;
+    animation-name:parpadeo;
+}
+.logo2{
+    margin-left:-37px;
+}
+@keyframes parpadeo{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+.form-box{
+    width:300px;
+    padding:30px 10px;
+    background-color:#345749;
+    text-align:center;
+    animation-name:fadeup;
+    animation-duration:2s;
+    border-radius:50px;
+    box-shadow: 0px 3px 5px rgb(0, 0, 0);
+}
+
+.form-title{
+    color:white;
+    text-transform:uppercase;
+}
+
+
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box input[type="sumbit"]{
+    border:0;
+    background:none;
+    display:block;
+    margin:20px auto;
+    padding:14px 10px;
+    text-align:center;
+    border:2px solid white;
+    width:200px;
+    outline:none;
+    color:rgb(67, 62, 62);
+    border-radius:24px;
+    transition:0.25s;
+    background-color:white;   
+}
+
+
+.form-box input[type="text"]:focus,
+.form-box input[type="password"]:focus{
+    width:250px;
+    border-color:rgb(69, 69, 69);
+}
+
+
+.form-box button[type="sumbit"]{
+    border:0;
+    padding:15px;
+    width:180px;
+    border-radius:25px;
+    background-color:#3E6246;
+    cursor:pointer;
+    border:2px solid rgb(255, 255, 255);
+}
+
+
+.form-box button[type="sumbit"]:hover{
+    background:none;
+}
+@keyframes fadeup{
+    from{
+        margin-top:200px;
+        opacity: 0;
+    }
+    to{
+        margin-top:0;
+        opacity: 1;
+    }
+}
